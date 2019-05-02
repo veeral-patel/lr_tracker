@@ -5,4 +5,9 @@ class System < ApplicationRecord
 
   validates :hostname, :presence => true
   validates :status, :presence => true
+
+  def to_s
+    hostname
+  end
+
 end

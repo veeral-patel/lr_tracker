@@ -33,12 +33,12 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.number_field :status %>
+    <%= form.select :status, System.statuses.keys.to_a %>
   </div>
 
   <div class="field">
     <%= form.label :engagement_id %>
-    <%= form.text_field :engagement_id %>
+    <%= form.collection_select(:engagement_id, Engagement.all, :id, :code, {:prompt => 'Select the engagement', :selected => @system.engagement_id}) =%>
   </div>
 
   <div class="actions">
