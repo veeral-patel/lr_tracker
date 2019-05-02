@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Hostname</th>
+      <th>Created</th>
       <th>Lead</th>
-      <th>Notes</th>
       <th>Summary</th>
       <th>Status</th>
       <th>Engagement</th>
@@ -19,8 +19,8 @@
     <% @systems.each do |system| %>
       <tr>
         <td><%= system.hostname %></td>
+        <td><%= system.created_at %></td>
         <td><%= system.lead %></td>
-        <td><%= system.notes %></td>
         <td><%= system.summary %></td>
         <td><%= system.status %></td>
         <td><%= system.engagement %></td>
