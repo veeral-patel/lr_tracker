@@ -35,5 +35,6 @@ However, this means there is a risk of data loss. If you'd like to store your da
     - Tagged lead in IRIS
     - Did hit review
     - Can add notes to an action item
+    - Create sub-items for action items
 - Section for dates to timeline around
     - Can add filter to a date
