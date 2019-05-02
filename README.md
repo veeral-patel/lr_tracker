@@ -34,5 +34,6 @@ However, this means there is a risk of data loss. If you'd like to store your da
 - Section for action items. Populated by default with:
     - Tagged lead in IRIS
     - Did hit review
+    - Can add notes to an action item
 - Section for dates to timeline around
     - Can add filter to a date
