@@ -1,24 +1,18 @@
-# README
+# Live Response Analysis Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+As an incident response consultant, I built this Rails-based CRUD application to help me organize my live response analyses.
 
-Things you may want to cover:
+## Screenshots
 
-* Ruby version
+![Systems](screenshots/systems.png)
+![Engagements](screenshots/engagements.png)
 
-* System dependencies
 
-* Configuration
+## To Run
 
-* Database creation
+```
+rails db:create db:migrate
+rails s
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Open http://localhost:3000
