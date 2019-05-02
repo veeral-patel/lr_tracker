@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hostname: MyString
+  lead: MyText
+  notes: MyText
+  summary: MyText
+  status: 1
+  engagement: one
+
+two:
+  hostname: MyString
+  lead: MyText
+  notes: MyText
+  summary: MyText
+  status: 1
+  engagement: two

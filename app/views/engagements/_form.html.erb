@@ -1,0 +1,27 @@
+<%= form_with(model: engagement, local: true) do |form| %>
+  <% if engagement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(engagement.errors.count, "error") %> prohibited this engagement from being saved:</h2>
+
+      <ul>
+      <% engagement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client %>
+    <%= form.text_field :client %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

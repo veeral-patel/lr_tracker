@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hostname:</strong>
+  <%= @system.hostname %>
+</p>
+
+<p>
+  <strong>Lead:</strong>
+  <%= @system.lead %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @system.notes %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @system.summary %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @system.status %>
+</p>
+
+<p>
+  <strong>Engagement:</strong>
+  <%= @system.engagement %>
+</p>
+
+<%= link_to 'Edit', edit_system_path(@system) %> |
+<%= link_to 'Back', systems_path %>
