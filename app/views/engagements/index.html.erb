@@ -2,7 +2,7 @@
 
 <h3>Engagements</h1>
 
-<table>
+<table class="uk-table uk-table-divider uk-table-hover">
   <thead>
     <tr>
       <th>Code</th>
@@ -18,7 +18,7 @@
         <td><%= engagement.client %></td>
         <td><%= link_to 'Show', engagement %></td>
         <td><%= link_to 'Edit', edit_engagement_path(engagement) %></td>
-        <td><%= link_to 'Destroy', engagement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', engagement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
