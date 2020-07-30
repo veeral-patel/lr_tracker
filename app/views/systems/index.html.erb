@@ -1,6 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h3>Systems</h1>
+<div style="display: flex; justify-content: space-between">
+  <div>
+    <h3>Systems</h1>
+  </div>
+  <div>
+    <%= link_to 'New System', new_system_path, class: "uk-button uk-button-primary" %>
+  </div>
+</div>
 
 <p class="uk-text-meta">
   All the computers that we've forensically analyzed
@@ -34,7 +41,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New System', new_system_path %>
