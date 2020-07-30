@@ -1,7 +1,7 @@
 <%= form_with(model: engagement, local: true) do |form| %>
   <% if engagement.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(engagement.errors.count, "error") %> prohibited this engagement from being saved:</h2>
+      <h3><%= pluralize(engagement.errors.count, "error") %> prohibited this engagement from being saved:</h3>
 
       <ul>
       <% engagement.errors.full_messages.each do |message| %>
@@ -13,15 +13,15 @@
 
   <div class="field">
     <%= form.label :code %>
-    <%= form.text_field :code %>
+    <%= form.text_field :code, class: "uk-input uk-form-width-large", placeholder: "NIKE-03-2020" %>
   </div>
 
   <div class="field">
     <%= form.label :client %>
-    <%= form.text_field :client %>
+    <%= form.text_field :client, class: "uk-input uk-form-width-large", placeholder: "Nike" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Submit', :class => "uk-button-primary" %>
   </div>
 <% end %>
