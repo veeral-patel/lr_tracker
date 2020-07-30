@@ -14,13 +14,16 @@ a spreadsheet or Google Doc.
 
 ## Screenshots
 
-List engagements:
+### List engagements
+
 ![Engagements](screenshots/engagements.png)
 
-List systems to analyze:
+### List systems to analyze
+
 ![Systems](screenshots/systems.png)
 
-Create a live response analysis:
+### Create a live response analysis
+
 ![Edit LR](screenshots/new_system.png)
 
 ## Tech Stack
