@@ -1,6 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h3>Engagements</h1>
+<div style="display: flex; justify-content: space-between">
+  <div>
+    <h3>Engagements</h1>
+  </div>
+  <div>
+    <%= link_to 'New Engagement', new_engagement_path, class: "uk-button uk-button-primary" %>
+  </div>
+</div>
 
 <p class="uk-text-meta">
   All the incident response investigations we've worked on for clients
@@ -26,7 +33,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Engagement', new_engagement_path %>
