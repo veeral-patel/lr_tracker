@@ -13,22 +13,22 @@
 
   <div class="field">
     <%= form.label :hostname %>
-    <%= form.text_field :hostname, class: "uk-input uk-form-width-large" %>
+    <%= form.text_field :hostname, class: "uk-input uk-form-width-large", placeholder: "WIN-2322" %>
   </div>
 
   <div class="field">
     <%= form.label :lead %>
-    <%= form.text_area :lead, class: "uk-textarea uk-form-width-large", size: "75x7" %>
+    <%= form.text_area :lead, class: "uk-textarea uk-form-width-large", size: "75x7", placeholder: "osquery indicates mimikatz was executed" %>
   </div>
 
   <div class="field">
     <%= form.label :notes %>
-    <%= form.text_area :notes, class: "uk-textarea uk-form-width-large", size:"75x7" %>
+    <%= form.text_area :notes, class: "uk-textarea uk-form-width-large", size:"75x7", placeholder: "- SIEM logs indicate the attacker uploaded files from the Desktop to a Dropbox account" %>
   </div>
 
   <div class="field">
     <%= form.label :summary %>
-    <%= form.text_area :summary, class: "uk-textarea uk-form-width-large", size: "75x7" %>
+    <%= form.text_area :summary, class: "uk-textarea uk-form-width-large", size: "75x7", placeholder: "Financial data was likely lost. Escalate this into an incident" %>
   </div>
 
   <div class="field">
@@ -42,6 +42,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Submit', :class => "uk-button uk-button-primary" %>
   </div>
 <% end %>
